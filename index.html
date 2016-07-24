@@ -33,7 +33,7 @@
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
     <h1>Example Presentation</h1>
-    <h2>Developing Data Products JHU</h2>
+    <h2>Webmapping app for drought monitoring</h2>
     <p>Francisco Zambrano Bigiarini<br/></p>
   </hgroup>
   <article></article>  
@@ -46,7 +46,7 @@
     <h2>Summary</h2>
   </hgroup>
   <article data-timings="">
-    <p>This is an example of making presentations using Slidify</p>
+    <p>This is an example of making presentations using Slidify used to show one application made on Shiny to show the assessment of the agricultural drought on the BioBio Region of Chile for the last sixteen years. This webmapping show the Vegetation Condition Index (VCI) aggregated at administrative unit on the Region for each period of 16 days, also present the Standarized Precipitation Index (SPI) for 26 weather stations.</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -54,13 +54,12 @@
 
 <slide class="" id="slide-2" style="background:;">
   <hgroup>
-    <h2>Example&#39;s R code</h2>
+    <h2>Vegetation Condition Index (VCI)</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">plot(rnorm(100))
-</code></pre>
+    <p>This is the equation for the vegetation condition index calculated from data of NDVI.</p>
 
-<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"></p>
+<p>\[VCI = \frac{NDVI - NDVI_{min}}{NDVI_{max}-NDVI_{min}}\]</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -68,21 +67,27 @@
 
 <slide class="" id="slide-3" style="background:;">
   <hgroup>
-    <h2>Numbered list</h2>
+    <h2>Derivation of VCI</h2>
   </hgroup>
   <article data-timings="">
-    <ol>
-<li>First item</li>
-<li>Second item</li>
-<li>Third item</li>
-<li>Forth item</li>
-</ol>
+    <p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Derivation of VCI</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
   <hgroup>
     <h2>Hyperlink to an a Shiny app</h2>
   </hgroup>
@@ -105,20 +110,26 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Example&#39;s R code'>
+        data-slide=2 title='Vegetation Condition Index (VCI)'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Numbered list'>
+        data-slide=3 title='Derivation of VCI'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Hyperlink to an a Shiny app'>
+        data-slide=4 title='Derivation of VCI'>
          4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Hyperlink to an a Shiny app'>
+         5
       </a>
     </li>
   </ul>
@@ -131,7 +142,21 @@
 </body>
   <!-- Load Javascripts for Widgets -->
   
-  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
   <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <!-- DONE LOADING HIGHLIGHTER JS FILES -->

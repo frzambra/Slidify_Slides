@@ -1,10 +1,8 @@
 base
-methods
-datasets
-utils
-grDevices
-graphics
-stats
 sp
 raster
 slidify
+reshape2
+plyr
+ggplot2
+scales
